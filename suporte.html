@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte - Contate-nos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="suporte.css">
+</head>
+<body>
+<!--Menu e Fazer Login-->
+<body>
+     <!--Menu principal-->
+     <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Logos/logotipo igreja.png" alt="Logo" class="logo-navbar">
+                <div class ="brand-text">
+                    Ieq Quadrangular
+                    <span class="sede-text">ＳＥＤＥ</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Página Principal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="células.html">Células</a></li>
+                    <li class="nav-item"><a class="nav-link" href="forum.html">Feed</a></li>
+                    <li class="nav-item"><a class="nav-link" href="suporte.html">Suporte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="loja.html">Loja</a></li>
+                <!-- Botão de Login que abre a pop-up -->
+    <li class="nav-item"><a href="login.html" class="nav-link login-btn" data-toggle="modal" data-target="#authModal">Fazer Login</a></li>
+</ul>
+            </div>
+        </div>
+    </nav>
+    <div class="support-container">
+        <div class="support-box">
+            <h1>Contate-nos</h1>
+            <p>Nos conte o que ocorreu para acharmos uma solução!</p>
+            
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Seu Nome">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Seu E-mail">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Selecione o tipo de problema:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="problema" id="erro-pagamento">
+                        <label class="form-check-label" for="erro-pagamento">Erro de pagamento</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="problema" id="reembolso">
+                        <label class="form-check-label" for="reembolso">Reembolso</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="problema" id="bugs">
+                        <label class="form-check-label" for="bugs">Bugs</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Descrição do Problema</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Explique seu problema"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="file" class="form-label">Anexar Imagem ou Vídeo</label>
+                    <input type="file" class="form-control" id="file" accept="image/*, video/*">
+                </div>
+
+                <button type="submit" class="btn btn-submit w-100">Enviar Solicitação</button>
+            </form>
+        </div>
+    </div>
+
+  <!--Rodapé-->
+  <footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="Logos/logotipo igreja.png" alt="Logo da Igreja">
+        </div>
+        
+        <div class="footer-links">
+            <h3>Links Úteis</h3>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="sobrenos.html">Ministérios</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contato</h3>
+            <p><strong>Endereço:</strong> Rua Exemplo, 123 - Cidade, Estado</p>
+            <p><strong>Email:</strong> contato@igreja.com</p>
+            <p><strong>Telefone:</strong> (00) 1234-5678</p>
+        </div>
+
+        <div class="footer-social">
+            <h3>Siga-nos</h3>
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="youtube-icon.png" alt="YouTube"></a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Igreja Exemplo. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

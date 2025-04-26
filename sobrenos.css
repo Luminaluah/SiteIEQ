@@ -1,0 +1,418 @@
+/* Fundo com efeito Aurora Boreal */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #00f0ff;
+    background: linear-gradient(270deg, #032653, #0859a0, #011a2e);
+    background-size: 600% 600%;
+    animation: aurora 20s ease infinite;
+}
+
+@keyframes aurora {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Banner Topo */
+.banner-topo {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 60px 20px;
+    box-shadow: 0 0 30px #00f0ff;
+}
+
+.banner-topo h1 {
+    font-size: 3em;
+    color: #00f0ff;
+    text-shadow: 0 0 20px #00f0ff;
+}
+
+/* Seções */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.historia h2, .pastores h2, .ministerios h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00f0ff;
+    text-shadow: 0 0 10px #00f0ff;
+}
+
+p {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    line-height: 1.8;
+    color: #c0f7ff;
+}
+
+/* Pastores */
+.pastores-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.pastor {
+    background: rgba(10, 10, 10, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #00f0ff;
+    max-width: 250px;
+}
+
+.pastor img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #00f0ff;
+}
+
+.pastor h3 {
+    margin-bottom: 10px;
+    color: #00f0ff;
+    text-shadow: 0 0 8px #00f0ff;
+}
+
+/* Ministérios */
+.ministerios-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.ministerio {
+    background: rgba(10, 10, 10, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 250px;
+    box-shadow: 0 0 15px #00f0ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ministerio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #00f0ff, 0 0 60px #00f0ff inset;
+}
+
+.ministerio h3 {
+    margin-bottom: 10px;
+    color: #00f0ff;
+    text-shadow: 0 0 8px #00f0ff;
+}
+
+/* Responsividade */
+@media(max-width: 768px) {
+    .pastores-container, .ministerios-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #01101f;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.footer-links, .footer-contact, .footer-social {
+    width: 25%;
+    min-width: 200px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-social a img {
+    width: 30px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    background: #000E1A;
+    padding: 10px 0;
+}
+
+/* Fundo com efeito Aurora Boreal */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #00f0ff;
+    background: linear-gradient(270deg, #032653, #0859a0, #011a2e);
+    background-size: 600% 600%;
+    animation: aurora 20s ease infinite;
+}
+
+@keyframes aurora {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Banner Topo */
+.banner-topo {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 60px 20px;
+    box-shadow: 0 0 30px #00f0ff;
+}
+
+.banner-topo h1 {
+    font-size: 3em;
+    color: #00f0ff;
+    text-shadow: 0 0 20px #00f0ff;
+}
+
+/* Seções */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.historia h2, .pastores h2, .ministerios h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00f0ff;
+    text-shadow: 0 0 10px #00f0ff;
+}
+
+p {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    line-height: 1.8;
+    color: #c0f7ff;
+}
+
+/* Pastores */
+.pastores-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.pastor {
+    background: rgba(10, 10, 10, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #00f0ff;
+    max-width: 250px;
+}
+
+.pastor img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #00f0ff;
+}
+
+.pastor h3 {
+    margin-bottom: 10px;
+    color: #00f0ff;
+    text-shadow: 0 0 8px #00f0ff;
+}
+
+/* Ministérios */
+.ministerios-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.ministerio {
+    background: rgba(10, 10, 10, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 250px;
+    box-shadow: 0 0 15px #00f0ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ministerio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #00f0ff, 0 0 60px #00f0ff inset;
+}
+
+.ministerio h3 {
+    margin-bottom: 10px;
+    color: #00f0ff;
+    text-shadow: 0 0 8px #00f0ff;
+}
+
+/* Responsividade */
+@media(max-width: 768px) {
+    .banner-topo h1 {
+        font-size: 2.2em;
+    }
+
+    .pastores-container, .ministerios-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        width: 120px;
+    }
+
+    .footer-links, .footer-contact, .footer-social {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .footer-links ul li {
+        margin: 5px 0;
+    }
+
+    .footer-social a img {
+        width: 25px;
+        margin: 8px;
+    }
+}
+
+/* Rodapé */
+footer {
+    background-color: #01101f;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.footer-links, .footer-contact, .footer-social {
+    width: 30%;
+    min-width: 250px;
+    text-align: left;
+}
+
+.footer-links h3, .footer-contact h3, .footer-social h3 {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-social a img {
+    width: 30px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    background: #000E1A;
+    padding: 10px 0;
+}
+
+/* Responsividade */
+@media(max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo img {
+        width: 120px;
+    }
+
+    .footer-links, .footer-contact, .footer-social {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-social a img {
+        width: 40px;
+    }
+}

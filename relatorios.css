@@ -1,0 +1,168 @@
+/* Definindo o estilo base para a página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #212529; /* Fundo escuro mais quente */
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0; /* Texto claro para contraste */
+}
+
+/* Cabeçalho */
+.header {
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* Gradiente suave azul */
+    color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #007bff;
+}
+
+.header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Efeito de sombra para destacar */
+}
+
+.header .user-actions span {
+    font-size: 1.1rem;
+    margin-right: 1rem;
+}
+
+.header .user-actions a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.header .user-actions a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo Principal */
+main {
+    margin-left: 260px;
+    padding: 2rem;
+    min-height: 100vh;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Efeito de sombra */
+}
+
+main h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+/* Cards para as seções */
+.card {
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #2c3e50, #34495e); /* Gradiente escuro */
+    color: #e0e0e0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #dcdcdc;
+    margin-bottom: 1.5rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo dos Botões */
+.login-btn {
+    background: linear-gradient(45deg, #00bcd4, #007bff); /* Gradiente azul e ciano */
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.3); /* Efeito de brilho suave */
+    margin-left: 15px;
+}
+
+.login-btn:hover {
+    background: linear-gradient(45deg, #007bff, #00bcd4); /* Inversão do gradiente no hover */
+    box-shadow: 0px 6px 20px rgba(0, 255, 255, 0.5); /* Aumento do brilho no hover */
+    transform: translateY(-2px); /* Efeito de elevação */
+}
+
+/* Tabela */
+.table {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #444;
+}
+
+/* Estilo do gráfico */
+#graficoVendas {
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajuste para o layout responsivo */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .user-actions {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: static;
+        padding: 1rem;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+}

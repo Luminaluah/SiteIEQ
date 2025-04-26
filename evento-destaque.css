@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, #000000, #0a0a23);
+    color: #fff;
+}
+
+
+/* Estilo para o fundo da página */
+body {
+    background: linear-gradient(to bottom, black, #3968e7); /* Gradiente de preto para azul-turquesa */
+    background-attachment: fixed; /* Mantém o fundo fixo */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Garante que o fundo cobre toda a página */
+    color: white;
+}
+
+.evento-container {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #00f0ff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00f0ff;
+    text-align: center;
+}
+
+h1 {
+    color: #00f0ff;
+    margin-bottom: 30px;
+}
+
+.evento-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.descricao {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #cccccc;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: #00f0ff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: #00c8ff;
+}

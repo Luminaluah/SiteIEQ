@@ -1,0 +1,147 @@
+/* estilo-blog-conteudo.css */
+
+/* Fundo geral */
+body {
+    background: linear-gradient(135deg, #04152d, #0a2a4c, #04152d);
+    background-size: 400% 400%;
+    animation: backgroundMove 15s ease infinite;
+    color: #d3d3d3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Animação de aurora boreal */
+@keyframes backgroundMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Títulos */
+.blog-title {
+    color: #4ec5f1;
+    font-size: 3rem;
+    text-shadow: 0 0 15px #4ec5f1, 0 0 25px #2895c9;
+}
+
+.blog-subtitle {
+    color: #b1dffe;
+    font-weight: 300;
+}
+
+/* Imagem */
+.sombra-neon {
+    box-shadow: 0 0 20px rgba(78, 197, 241, 0.7), 0 0 40px rgba(78, 197, 241, 0.5);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.sombra-neon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(78, 197, 241, 1), 0 0 60px rgba(78, 197, 241, 0.7);
+}
+
+/* Texto do artigo */
+.blog-article p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+/* Botões Neon */
+.btn-neon {
+    background: transparent;
+    border: 2px solid #4ec5f1;
+    color: #4ec5f1;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(78, 197, 241, 0.6);
+}
+
+.btn-neon:hover {
+    background: #4ec5f1;
+    color: #04152d;
+    box-shadow: 0 0 20px rgba(78, 197, 241, 1), 0 0 30px rgba(78, 197, 241, 0.7);
+}
+
+/* Comentários */
+.comentarios {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(78, 197, 241, 0.2);
+    margin-top: 2rem;
+}
+
+.comentarios form {
+    margin-bottom: 1.5rem;
+}
+
+.comentarios form textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+    border: 2px solid #4ec5f1;
+    background: transparent;
+    color: #d3d3d3;
+    padding: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.comentarios form textarea:focus {
+    border-color: #2895c9;
+    outline: none;
+}
+
+.comentarios button {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+    background: #4ec5f1;
+    color: #04152d;
+    padding: 10px;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+}
+
+.comentarios button:hover {
+    background: #2895c9;
+}
+
+.text-neon {
+    color: #4ec5f1;
+    text-shadow: 0 0 10px #4ec5f1;
+}
+
+/* Comentários individuais */
+.comentarios .comentario {
+    border-bottom: 1px solid #4ec5f1;
+    padding: 15px;
+    margin-bottom: 1rem;
+    background: rgba(78, 197, 241, 0.1);
+    border-radius: 8px;
+}
+
+.comentarios .comentario p {
+    margin: 0;
+}
+
+.comentarios .comentario .comentario-user {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .blog-title {
+        font-size: 2rem;
+    }
+
+    .blog-article p {
+        font-size: 1rem;
+    }
+
+    .comentarios form textarea {
+        height: 80px;
+    }
+}

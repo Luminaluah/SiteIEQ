@@ -1,0 +1,259 @@
+/* Definindo o estilo base para a página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #212529; /* Fundo escuro mais quente */
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0; /* Texto claro para contraste */
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #343a40; /* Fundo escuro mais suave */
+    color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #007bff;
+}
+
+.header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Efeito de sombra para destacar */
+}
+
+.header .user-actions span {
+    font-size: 1.1rem;
+    margin-right: 1rem;
+}
+
+.header .user-actions a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.header .user-actions a:hover {
+    text-decoration: underline;
+}
+
+/* Menu Lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #212529;
+    padding-top: 2rem;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 6px solid #5b6c79; /* Lateral azul suave */
+}
+
+.sidebar .nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .nav-item {
+    margin: 0.5rem 0;
+}
+
+.sidebar .nav-link {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #007bff;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+/* Conteúdo Principal */
+main {
+    margin-left: 260px;
+    padding: 2rem;
+    min-height: 100vh;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Efeito de sombra */
+}
+
+main h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+/* Cards para as seções */
+.card {
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #2c3e50, #34495e); /* Gradiente escuro */
+    color: #e0e0e0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #dcdcdc;
+    margin-bottom: 1.5rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo dos Botões */
+.btn {
+    font-size: 1.1rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Botões com gradiente e neon suave */
+.btn-primary {
+    background: linear-gradient(to right, #0066cc, #00b7ff);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #00b7ff, #0066cc);
+    box-shadow: 0 4px 12px rgba(0, 0, 255, 0.2);
+}
+
+.btn-warning {
+    background: linear-gradient(to right, #f39c12, #e67e22);
+    border: none;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(to right, #e67e22, #f39c12);
+    box-shadow: 0 4px 12px rgba(255, 165, 0, 0.2);
+}
+
+.btn-success {
+    background: linear-gradient(to right, #27ae60, #2ecc71);
+    border: none;
+}
+
+.btn-success:hover {
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.2);
+}
+
+.btn-danger {
+    background: linear-gradient(to right, #e74c3c, #c0392b);
+    border: none;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(to right, #c0392b, #e74c3c);
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.2);
+}
+
+/* Ajuste para o layout responsivo */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .user-actions {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: static;
+        padding: 1rem;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Adicionando sombra para o painel */
+.container-fluid {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin-top: 2rem;
+    background-color: #333;
+}
+
+/* Estilo do título do painel */
+h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Melhorando o espaço entre os cards */
+.row {
+    display: flex;
+    gap: 2rem;
+}
+
+.card-body a {
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+/* Estilo para o texto do botão "Sair" */
+.header .user-actions span {
+    background-color: #6c757d; /* Cinza quente */
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Estilo da borda do painel */
+.sidebar {
+    border-left: 6px solid #5b6c79;
+}
+
+/* Adicionando borda suave e um fundo diferente para o painel de controle */
+.main-container {
+    border-radius: 10px;
+    background-color: #333;
+    padding: 2rem;
+}

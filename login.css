@@ -1,0 +1,115 @@
+/* Estilo do Body */
+body {
+    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e); /* Gradiente preto e azul */
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+/* Estilo do container de login */
+.card {
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo suave com leve transparência */
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.3); /* Sombra suave neon */
+}
+
+/* Estilo do título de boas-vindas */
+.card-header h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00FFFF; /* Cor neon */
+    text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.6);
+    margin-bottom: 20px;
+}
+
+/* Estilo da mensagem "Por favor, faça o login ou se cadastre" */
+.card-header p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #bbb;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 255, 255, 0.4);
+    margin-bottom: 30px;
+}
+
+/* Estilo para botões */
+.btn {
+    padding: 12px 18px;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    border-radius: 50px; /* Bordas arredondadas */
+    border: 2px solid #00FFFF; /* Borda neon ciano */
+    background-color: transparent;
+    color: #00FFFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 8px rgba(0, 255, 255, 0.5);
+}
+
+.btn:hover {
+    background-color: #00FFFF;
+    color: #121212;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8);
+    transform: scale(1.05);
+}
+
+/* Estilo para os links 'Esqueceu sua senha' */
+a {
+    text-decoration: none;
+    color: #00FFFF;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #00bcd4;
+    text-shadow: 0px 0px 8px rgba(0, 255, 255, 0.5);
+}
+
+/* Estilo para campos de inserção de dados (input fields) */
+.form-control {
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid #00FFFF; /* Borda ciano suave */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro para os campos */
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Placeholder com opacidade */
+}
+
+.form-control:focus {
+    border-color: #00bcd4; /* Cor de foco mais intensa */
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5); /* Efeito de foco neon */
+    outline: none;
+}
+
+/* Estilo para o modal */
+.modal-content {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+    border-bottom: none;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+/* Efeitos de transição */
+.card-body {
+    transition: all 0.3s ease;
+}
+
+.card-body:hover {
+    transform: scale(1.05);
+}

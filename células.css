@@ -1,0 +1,375 @@
+/* Estilo para o fundo da página */
+body {
+    background: linear-gradient(to bottom, black, #3968e7); /* Gradiente de preto para azul-turquesa */
+    background-attachment: fixed; /* Mantém o fundo fixo */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Garante que o fundo cobre toda a página */
+    color: white;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilo dos cards */
+.card {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background: rgb(2, 74, 107);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    flex-direction: row;
+    transition: transform 0.3s ease-in-out;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Adiciona um efeito de zoom suave ao passar o mouse */
+}
+
+.card img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .content {
+    padding: 20px;
+    width: 50%;
+}
+
+.card h2 {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.card p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+/* Botões */
+.btn {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(45deg, #0b54a1, #00C9FF);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #0056b3, #0088cc);
+}
+
+/* Texto extra */
+.info-text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Modal */
+.modal {
+    font-family: 'Quicksand', sans-serif;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(45deg, #034294, #018bb1); /* Gradiente do modal */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 3px solid #00ffff; /* Borda neon */
+    color: white;
+}
+
+.modal h2 {
+    font-size: 28px;
+}
+
+.modal p {
+    font-size: 18px;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.close:hover {
+    color: #ff0000;
+}
+
+/* Estilo para o botão "Voltar" */
+.btn-voltar {
+    font-family: 'Quicksand', sans-serif;
+    position: absolute; /* Posicionamento absoluto */
+    top: 20px; /* Distância do topo da página */
+    left: 20px; /* Distância da esquerda da página */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #00bcd4, #007bff); /* Gradiente suave de azul e ciano */
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.3); /* Efeito de brilho suave */
+}
+
+/* Animação no hover */
+.btn-voltar:hover {
+    background: linear-gradient(45deg, #007bff, #00bcd4); /* Inversão do gradiente no hover */
+    box-shadow: 0px 6px 20px rgba(0, 255, 255, 0.5); /* Aumento do brilho no hover */
+    transform: translateY(-2px); /* Efeito de elevação */
+}
+
+/* Estilo do ícone do botão */
+.btn-voltar i {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    font-size: 20px; /* Tamanho do ícone */
+}
+
+/* Estilo do botão em foco */
+.btn-voltar:focus {
+    outline: none; /* Remove o contorno do botão quando ele está em foco */
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.7); /* Efeito de foco */
+}
+
+/* Estilo para responsividade - garantir que o botão não fique grande demais em telas menores */
+@media (max-width: 768px) {
+    .btn-voltar {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .btn-voltar i {
+        font-size: 18px;
+    }
+}
+
+/* Rodapé */
+footer {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #01101f;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.footer-links, .footer-contact, .footer-social {
+    width: 25%;
+    min-width: 200px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-social a img {
+    width: 30px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    background: #000E1A;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    /* Botão voltar ajustado */
+    .btn-voltar {
+        position: relative;
+        width: fit-content;
+        padding: 8px 16px;
+        font-size: 14px;
+        top: 0;
+        left: 0;
+        margin: 10px;
+    }
+
+    /* Container */
+    .container {
+        padding: 10px;
+    }
+
+    /* Cards organizados em coluna */
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card .content {
+        padding: 15px;
+    }
+
+    .card h2 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .card p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 12px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    /* Modal */
+    .modal-content {
+        width: 90%;
+        padding: 20px;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .modal h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .modal p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .close {
+        font-size: 24px;
+        top: 10px;
+        right: 10px;
+    }
+
+    /* Rodapé */
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .footer-logo img {
+        max-width: 150px;
+        height: auto;
+    }
+
+    .footer-links ul {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+    }
+
+    .footer-links ul li {
+        margin: 6px 0;
+    }
+
+    .footer-contact p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .footer-social a img {
+        width: 28px;
+        height: 28px;
+        margin: 0 8px;
+    }
+
+    .footer-bottom {
+        font-size: 13px;
+        padding-top: 10px;
+    }
+}
+

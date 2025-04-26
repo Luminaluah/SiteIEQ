@@ -1,0 +1,213 @@
+/* Estilo para o fundo da página */
+body {
+    background: linear-gradient(to bottom, black, #3968e7); /* Gradiente de preto para azul-turquesa */
+    background-attachment: fixed; /* Mantém o fundo fixo */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Garante que o fundo cobre toda a página */
+    color: white;
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Estilo das Políticas */
+.policy-section h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.policy-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ffffff;
+}
+
+/* Rodapé */
+footer {
+    background-color: #01101f;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.footer-links, .footer-contact, .footer-social {
+    width: 25%;
+    min-width: 200px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #2cb1ff;
+}
+
+.footer-social a img {
+    width: 30px;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+.footer-social a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Estilo para o fundo da página */
+body {
+    background: linear-gradient(to bottom, black, #3968e7); /* Gradiente de preto para azul-turquesa */
+    background-attachment: fixed; /* Mantém o fundo fixo */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Garante que o fundo cobre toda a página */
+    color: white;
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Estilo das Políticas */
+.policy-section h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.policy-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ffffff;
+}
+
+/* Rodapé */
+footer {
+    background-color: #01101f;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-links, .footer-contact, .footer-social {
+    width: 25%;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #2cb1ff;
+}
+
+.footer-social a img {
+    width: 30px;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+.footer-social a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Ajusta o banner para telas menores */
+    .banner img {
+        max-height: 250px;
+    }
+
+    /* Ajuste para o título das políticas */
+    .container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    /* Ajuste na largura dos elementos do footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo img {
+        width: 120px;
+    }
+
+    .footer-links, .footer-contact, .footer-social {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-social a img {
+        width: 40px;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20px;
+    }
+}

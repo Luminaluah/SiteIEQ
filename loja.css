@@ -1,0 +1,341 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #0a0f1c;
+    color: #00ffe1;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Cabeçalho */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+  }
+  
+  header input, header select {
+    margin: 5px;
+    padding: 10px;
+    width: 250px;
+    background-color: #1c1f2f;
+    border: 1px solid #00ffff;
+    color: #00ffe1;
+  }
+  
+  /* Categorias */
+  nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  nav button {
+    background-color: #1c1f2f;
+    color: #00ffff;
+    border: 1px solid #00ffff;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  nav button:hover {
+    background-color: #00ffff;
+    color: #0a0f1c;
+  }
+  
+  /* Produtos */
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: #1c1f2f;
+    border: 1px solid #00ffff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00ffff;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .product-card button {
+    background-color: #00ffff;
+    color: #0a0f1c;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .product-card button:hover {
+    background-color: #00ffe1;
+  }
+  
+  /* Paginação */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .pagination button {
+    background-color: #1c1f2f;
+    color: #00ffff;
+    border: 1px solid #00ffff;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .pagination button:hover {
+    background-color: #00ffff;
+    color: #0a0f1c;
+  }
+  
+/* Estilo para o lightbox */
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+#lightbox .close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Centralizar os produtos mantendo o tamanho original */
+/* Estilo para os cards de produtos */
+.product-card {
+  width: 200px; /* Tamanho do card */
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Estilo para a imagem do produto */
+.product-card img {
+  width: 100%; /* Imagem vai ocupar toda a largura do card */
+  height: 200px; /* Definir uma altura fixa para as imagens */
+  object-fit: cover; /* Garante que a imagem fique bem ajustada */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para o nome do produto */
+.product-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Estilo para o preço do produto */
+.product-card p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Estilo para o botão de adicionar ao carrinho */
+/* Container principal dos produtos */
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os cards */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px; /* Espaço ao redor dos cards */
+  }
+  
+  /* Estilo para os cards de produtos */
+  .product-card {
+    width: 250px; /* Tamanho maior para os cards */
+    height: auto;
+    border: 1px solid #03ffea;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #010811;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Efeito ao passar o mouse sobre o card */
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Estilo para a imagem do produto */
+  .product-card img {
+    width: 100%; /* Ocupa toda a largura do card */
+    height: 200px; /* Define altura fixa para a imagem */
+    object-fit: cover; /* Ajusta a imagem sem distorcer */
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo para o nome do produto */
+  .product-card h3 {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 10px 0;
+  }
+  
+  /* Estilo para o preço do produto */
+  .product-card p {
+    font-size: 16px;
+    color: #00c6f8;
+    margin: 5px 0;
+  }
+  
+  /* Estilo para o botão de adicionar ao carrinho */
+  .product-card button {
+    padding: 10px 20px;
+    background-color: #01811d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .product-card button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+/* Carrinho */
+#cart {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #021c36;
+  padding: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 11px;
+}
+
+#cart.open {
+  width: 300px;  /* Ajuste do tamanho do carrinho aberto */
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#cart-content {
+  display: none;
+}
+
+#cart.open #cart-content {
+  display: block;
+}
+
+.close-btn {
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .product-card {
+    width: 90%;  /* Ajuste a largura dos produtos no mobile */
+    margin: 10px auto;
+  }
+}
+
+/* Estilo para o botão de finalizar compra */
+.checkout-btn {
+    margin-top: 20px; /* Distância entre o total e o botão */
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* O botão ocupa toda a largura */
+    transition: background-color 0.3s;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #218838;
+  }
+  

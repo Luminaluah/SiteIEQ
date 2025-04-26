@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loja Neon</title>
+  <link rel="stylesheet" href="loja.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Loja Neon</h1>
+    <input type="text" id="search" placeholder="Buscar produtos...">
+    <select id="sort">
+      <option value="az">Ordenar A-Z</option>
+      <option value="za">Ordenar Z-A</option>
+    </select>
+  </header>
+
+  <nav>
+    <button class="category" data-category="todos">Todos</button>
+    <button class="category" data-category="roupas">Roupas</button>
+    <button class="category" data-category="eletronicos">Eletrônicos</button>
+    <button class="category" data-category="livros">Livros</button>
+  </nav>
+
+  <main id="product-list">
+    <!-- Aqui você pode colocar os produtos -->
+  </main>
+
+  <div class="pagination">
+    <button id="prev-page">Anterior</button>
+    <span id="page-info">Página 1 de 10</span>
+    <button id="next-page">Próxima</button>
+  </div>
+
+  <aside id="cart">
+    <h2>Carrinho <span id="cart-close" class="close-btn">&times;</span></h2>
+    <div id="cart-content" class="cart-content">
+      <ul id="cart-items"></ul>
+      <p id="total">Total: R$0,00</p>
+      <button id="checkout-btn" class="checkout-btn">Finalizar Compra</button> <!-- Novo botão -->
+    </div>
+    <span id="cart-count" class="cart-count">0</span> <!-- Contador -->
+  </aside>
+  
+
+  <script src="loja.js"></script>
+</body>
+</html>

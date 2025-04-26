@@ -1,0 +1,64 @@
+body {
+    background: linear-gradient(270deg, #020024, #090979, #023f5c);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.text-neon {
+    color: #00fff7;
+    text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7, 0 0 20px #00fff7;
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(80, 252, 246, 0.884);
+}
+
+.banner {
+    background: linear-gradient(90deg, #0d0d0d 0%, #1a1a1a 100%);
+}
+
+.card-neon {
+    background-color: #1e1e1e;
+    border: 1px solid #0f3875;
+    box-shadow: 0 0 10px rgba(133, 238, 234, 0.767);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-neon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 255, 247, 0.6);
+}
+
+.btn-neon {
+    background-color: transparent;
+    color: #042841;
+    border: 2px solid #00fff7;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.btn-neon:hover {
+    background-color: #00fff7;
+    color: #121212;
+    box-shadow: 0 0 15px #00fff7, 0 0 30px #00fff7;
+}
+
+footer {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    text-align: center;
+    color: #777;
+    border-top: 1px solid #00fff7;
+}
+
+.form-oracao {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(149, 255, 251, 0.3);
+}

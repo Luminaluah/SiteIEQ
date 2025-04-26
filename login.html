@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Link para o CSS personalizado -->
+    <link rel="stylesheet" href="login.css">
+
+    <!-- FontAwesome para ícones -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Container principal -->
+    <div class="container">
+        <div class="row justify-content-center align-items-center min-vh-100">
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-lg rounded">
+                    <div class="card-body">
+                        <h2 class="text-center">Bem-vindo</h2>
+                        <p class="text-center">Por favor, faça o login ou crie uma conta.</p>
+                        <div class="text-center">
+                            <button class="btn btn-primary" id="loginBtn">Fazer Login</button>
+                            <button class="btn btn-secondary" id="signupBtn">Cadastrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Login e Cadastro -->
+    <div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="authModalLabel">Escolha uma opção</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <button class="btn btn-outline-primary btn-block" id="loginOption">Fazer Login</button>
+                    <button class="btn btn-outline-success btn-block" id="signupOption">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Formulários de Login e Cadastro -->
+    <div class="modal fade" id="loginSignupModal" tabindex="-1" role="dialog" aria-labelledby="loginSignupModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginSignupModalLabel">Fazer Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="formBody">
+                    <!-- Formulário de Login -->
+                    <div id="loginForm">
+                        <form id="loginFormContent">
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" id="loginEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Senha</label>
+                                <input type="password" class="form-control" id="loginPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                            <a href="#" class="d-block text-center mt-2">Esqueceu sua senha?</a>
+                        </form>
+                    </div>
+
+                    <!-- Formulário de Cadastro -->
+                    <div id="signupForm" style="display:none;">
+                        <form id="signupFormContent">
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" class="form-control" id="signupName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" id="signupEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Senha</label>
+                                <input type="password" class="form-control" id="signupPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block">Cadastrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts do Bootstrap e FontAwesome -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script para o comportamento -->
+    <script src="login.js"></script>
+</body>
+</html>

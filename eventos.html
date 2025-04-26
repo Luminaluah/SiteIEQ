@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda da Semana</title>
+    <!-- Link para o arquivo CSS -->
+    <link href="eventos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--Menu principal-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Logos/logotipo igreja.png" alt="Logo" class="logo-navbar">
+                <div class ="brand-text">
+                    Ieq Quadrangular
+                    <span class="sede-text">ＳＥＤＥ</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Página Principal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="células.html">Células</a></li>
+                    <li class="nav-item"><a class="nav-link" href="forum.html">Feed</a></li>
+                    <li class="nav-item"><a class="nav-link" href="suporte.html">Suporte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="loja.html">Loja</a></li>
+                <!-- Botão de Login que abre a pop-up -->
+    <li class="nav-item"><a href="login.html" class="nav-link login-btn" data-toggle="modal" data-target="#authModal">Fazer Login</a></li>
+</ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Título da seção -->
+    <div class="titulo">Agenda da Semana</div>
+    <div class="subtitulo">Veja nossos eventos</div>
+<!-- Cartazes de eventos -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="evento">
+                <img src="Eventos/Evento primeiro.jpeg" alt="Evento 1" class="img-fluid">
+                <div class="evento-titulo">Evento 1 - Culto de Louvor</div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="evento">
+                <img src="Eventos/Evento Segundo.jpeg" alt="Evento 2" class="img-fluid">
+                <div class="evento-titulo">Evento 2 - Culta da Família</div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="evento">
+                <img src="Eventos/Evento terceiro.jpeg" alt="Evento 3" class="img-fluid">
+                <div class="evento-titulo">Evento 3 - Santa Ceia</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para imagem ampliada -->
+<div id="imagemAmpliada" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal()">X</span>
+            <img id="imagemModal" src="" alt="Imagem Ampliada" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+
+<!--Evento Único-->
+<section class="event-section bg-gradient">
+    <div class="container text-center text-white py-5">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Imagem de destaque do evento -->
+                <img src="Slides do Menu/boas vindas.png" alt="Evento" class="img-fluid mb-4 rounded-3">
+
+                <!-- Título do evento -->
+                <h2 class="display-4 fw-bold mb-3">Participe do Nosso Evento Exclusivo</h2>
+
+                <!-- Descrição do evento -->
+                <p class="lead mb-4">Não perca a oportunidade de adquirir nosso e-book exclusivo! Descubra tudo o que você precisa para alavancar sua carreira com dicas práticas e conteúdo rico. <strong>Garanta o seu agora!</strong></p>
+
+                <!-- Botão de Participar -->
+                <a href="inscricao.html" class="btn btn-custom-blue">Participar Agora</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contador de marketing -->
+    <div class="contador-container">
+        <p><span class="contador neon-blue">MUITAS</span> pessoas participando agora!</p>
+    </div>
+
+    <!-- Tabela de eventos -->
+    <div class="container mt-5">
+        <h4 class="text-center">Agenda</h4>
+        <div class="table-responsive">
+            <table class="table eventos-tabela">
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th class="horario">Horário</th>
+                        <th>Evento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda-feira</td>
+                        <td class="horario">19:00</td>
+                        <td>Culto de Oração</td>
+                    </tr>
+                    <tr>
+                        <td>Terça-feira</td>
+                        <td class="horario">20:00</td>
+                        <td>Encontro de Jovens</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta-feira</td>
+                        <td class="horario">19:30</td>
+                        <td>Palestra de Liderança</td>
+                    </tr>
+                    <tr>
+                        <td>Quinta-feira</td>
+                        <td class="horario">18:00</td>
+                        <td>Reunião de Células</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td class="horario">10:00</td>
+                        <td>Atividades Comunitárias</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td class="horario">18:00</td>
+                        <td>Culto de Encerramento</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+     <!-- Título do Calendário -->
+     <div class="calendar-title">
+        Calendário de Cultos
+    </div>
+
+    <div class="calendar-container">
+        <div class="calendar">
+            <!-- Títulos dos dias da semana -->
+            <div class="day-name">Dom</div>
+            <div class="day-name">Seg</div>
+            <div class="day-name">Ter</div>
+            <div class="day-name">Qua</div>
+            <div class="day-name">Qui</div>
+            <div class="day-name">Sex</div>
+            <div class="day-name">Sáb</div>
+
+            <!-- Dias do mês -->
+            <div class="day" data-day="1">1</div>
+            <div class="day" data-day="2">2</div>
+            <div class="day" data-day="3">3</div>
+            <div class="day" data-day="4">4</div>
+            <div class="day" data-day="5">5</div>
+            <div class="day" data-day="6">6</div>
+            <div class="day" data-day="7">7</div>
+            <div class="day" data-day="8">8</div>
+            <div class="day" data-day="9">9</div>
+            <div class="day" data-day="10">10</div>
+            <div class="day" data-day="11">11</div>
+            <div class="day" data-day="12">12</div>
+            <div class="day" data-day="13">13</div>
+            <div class="day" data-day="14">14</div>
+            <div class="day" data-day="15">15</div>
+            <div class="day" data-day="16">16</div>
+            <div class="day" data-day="17">17</div>
+            <div class="day" data-day="18">18</div>
+            <div class="day" data-day="19">19</div>
+            <div class="day" data-day="20">20</div>
+            <div class="day" data-day="21">21</div>
+            <div class="day" data-day="22">22</div>
+            <div class="day" data-day="23">23</div>
+            <div class="day" data-day="24">24</div>
+            <div class="day" data-day="25">25</div>
+            <div class="day" data-day="26">26</div>
+            <div class="day" data-day="27">27</div>
+            <div class="day" data-day="28">28</div>
+            <div class="day" data-day="29">29</div>
+            <div class="day" data-day="30">30</div>
+            <div class="day" data-day="31">31</div>
+        </div>
+    </div>
+
+    <!-- Aviso do evento -->
+    <div class="event-details" id="eventDetails">
+        <h3>Evento: Culto das Crianças</h3>
+        <p><strong>Localização:</strong> Igreja XYZ</p>
+        <p><strong>Horário:</strong> 18:00</p>
+    </div>
+
+    <script src="eventos.js"></script> <!-- Link para o arquivo JavaScript -->
+</body>
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-gradient">
+    <div class="col-md-8 p-lg-5 mx-auto my-5">
+        <h1 class="display-3 fw-bold text-white">Nossos Cursos</h1>
+        <p class="fw-normal text-white mb-4">Aprenda com os melhores cursos, desenvolvidos por especialistas para ajudá-lo a crescer em sua carreira.</p>
+        <div class="d-flex gap-3 justify-content-center lead fw-normal">
+            <a class="btn btn-custom-green" href="#">Saiba mais</a>
+            <a class="btn btn-custom-green" href="#">Inscreva-se agora</a>
+        </div>
+    </div>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+    
+    <!-- Cards para cursos -->
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card custom-card shadow-lg border-0">
+                    <img src="Seções/Seção do pão diário.jpeg" class="card-img-top" alt="Curso 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso de Programação</h5>
+                        <p class="card-text">Aprenda programação desde o básico até conceitos avançados. Ideal para iniciantes!</p>
+                        <a href="#" class="btn btn-custom-green">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card custom-card shadow-lg border-0">
+                    <img src="Seções/Seção do pão diário.jpeg" class="card-img-top" alt="Curso 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso de Design Gráfico</h5>
+                        <p class="card-text">Desenvolva suas habilidades de design gráfico e crie projetos incríveis com as melhores ferramentas.</p>
+                        <a href="#" class="btn btn-custom-green">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card custom-card shadow-lg border-0">
+                    <img src="Seções/Seção do pão diário.jpeg" class="card-img-top" alt="Curso 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso de Marketing Digital</h5>
+                        <p class="card-text">Domine as estratégias de marketing digital e leve seu negócio ao próximo nível.</p>
+                        <a href="#" class="btn btn-custom-green">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+   <!--Rodapé-->
+   <footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="Logos/logotipo igreja.png" alt="Logo da Igreja">
+        </div>
+        
+        <div class="footer-links">
+            <h3>Links Úteis</h3>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="sobrenos.html">Ministérios</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contato</h3>
+            <p><strong>Endereço:</strong> Rua Exemplo, 123 - Cidade, Estado</p>
+            <p><strong>Email:</strong> contato@igreja.com</p>
+            <p><strong>Telefone:</strong> (00) 1234-5678</p>
+        </div>
+
+        <div class="footer-social">
+            <h3>Siga-nos</h3>
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="youtube-icon.png" alt="YouTube"></a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Igreja Exemplo. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+  background-color: #121212;
+  font-family: 'Quicksand', sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #00d9ff;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  text-shadow: 0 0 20px rgba(0, 217, 255, 0.8);
+}
+
+.card {
+  background: rgba(20, 20, 50, 0.8);
+  border: 2px solid #00d9ff50;
+  border-radius: 16px;
+  padding: 40px 20px;
+  margin: 30px auto;
+  box-shadow: 0 0 15px #00d9ff66;
+  max-width: 500px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 25px #00d9ffcc;
+  transform: scale(1.02);
+}
+
+h3 {
+  color: #00d9ff;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* ESTILO DO PARÁGRAFO */
+p.lead {
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.btn-neon {
+  background-color: transparent;
+  border: 2px solid #00d9ff;
+  color: #00d9ff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  text-decoration: none;
+  display: inline-block;
+  width: 250px;
+  cursor: pointer;
+}
+
+.btn-neon:hover {
+  background-color: #00d9ff;
+  color: #121212;
+  box-shadow: 0 0 20px #00d9ff, 0 0 40px #00d9ff88;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .card {
+    padding: 30px;
+  }
+
+  .btn-neon {
+    width: 200px;
+    font-size: 1.1rem;
+  }
+}

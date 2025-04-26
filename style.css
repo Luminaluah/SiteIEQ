@@ -1,0 +1,1496 @@
+/* Estilização do menu */
+.navbar {
+    background-color: black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+/* Ajustar o tamanho do logo na navbar */
+.logo-navbar {
+    width: 120px; /* Ajuste o tamanho do logo conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 15px; /* Espaço entre o logo e o nome da igreja */
+}
+
+/* Ajustar o posicionamento do logo e do nome */
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Alinha o logo e o texto */
+    padding: 0; /* Remove o padding padrão para ajuste preciso */
+}
+
+/* Estilização do nome da Igreja */
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    color: white;
+    font-family: 'Quicksand', sans-serif; /* Fonte igual da página principal */
+    font-size: 28px; /* Tamanho de fonte conforme a página principal */
+}
+
+/* Estilização do nome Sede */
+.sede-text {
+    font-size: 12px; /* Deixa pequeno */
+    font-family: 'Arial', sans-serif; /* Fonte mais simples, igual a da página principal */
+    letter-spacing: 2px; /* Dá um espaçamento bonito */
+    opacity: 0.8;
+    font-weight: bold;
+    margin-left: -1px; /* Aproxima da palavra "Quadrangular" */
+}
+
+/* Estilização dos links do menu */
+.nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: white !important;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    padding: 8px 15px;
+    font-family: 'Quicksand', sans-serif; /* Fonte igual da página principal */
+}
+
+/* Cor do texto ao passar o mouse */
+.nav-link:hover {
+    color: gold !important;
+}
+
+/* Linha superior ao passar o mouse */
+.nav-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: gold;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 10px;
+}
+
+/* Estilização do botão Login */
+.login-btn {
+    background: linear-gradient(45deg, #00bcd4, #007bff); /* Gradiente azul e ciano */
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.3); /* Efeito de brilho suave */
+    margin-left: 15px; /* Espaço entre Loja e Login */
+}
+
+.login-btn:hover {
+    background: linear-gradient(45deg, #007bff, #00bcd4); /* Inversão do gradiente no hover */
+    box-shadow: 0px 6px 20px rgba(0, 255, 255, 0.5); /* Aumento do brilho no hover */
+    transform: translateY(-2px); /* Efeito de elevação */
+}
+
+
+/* Estilos gerais para o slide */
+.slide {
+    position: relative;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Borda neon azul claro */
+.slide:hover {
+    border-color: #00d4ff;
+    box-shadow: 0 4px 20px rgba(0, 212, 255, 0.6);
+}
+
+/* Conteúdo do slide - Título e botão */
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 40px; /* Ajuste para dar mais espaço à esquerda */
+    transform: translateY(-50%);
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    max-width: 80%; /* Para evitar que o conteúdo ocupe toda a largura */
+}
+
+/* Título do slide */
+.slide-content h2 {
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.4; /* Ajuste para o título ficar mais leve */
+}
+
+/* Estilo do botão */
+.btn-slide {
+    background-color: #00d4ff;
+    color: white;
+    border: 2px solid #00d4ff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    position: relative;
+    text-decoration: none; /* Remover underline */
+}
+
+/* Efeito duplo para o botão */
+.btn-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 212, 255, 0.3);
+    border-radius: 5px;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.btn-slide:hover::before {
+    transform: scale(1);
+}
+
+.btn-slide:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 212, 255, 0.6);
+}
+
+/* Ajuste de imagem para o slide */
+.carousel-inner img {
+    object-fit: cover;
+    height: 100vh;
+}
+
+/* Ajuste de responsividade */
+@media (max-width: 768px) {
+    .slide-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .btn-slide {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .slide-content {
+        left: 20px; /* Ajuste para a tela pequena */
+    }
+}
+
+/* Botões de navegação do carousel (setas) */
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 80%; /* Move as setas para baixo, ajustando conforme necessário */
+    width: 5%; /* Tamanho das setas */
+    z-index: 2; /* Garantir que as setas fiquem acima do conteúdo */
+}
+
+/* Ícones das setas */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo das setas */
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Quando o mouse passar sobre as setas */
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Efeito de destaque no hover */
+}
+
+
+/* Centralizar botões lado a lado */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+/* Estilo Neon Moderno Botões*/
+.neon-button {
+    font-family: 'Quicksand', sans-serif;
+    padding: 15px 30px;
+    color: #00f0ff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #00f0ff;
+    border-radius: 8px;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff inset;
+}
+
+.neon-button:hover {
+    background: #00f0ff;
+    color: #0a0a0a;
+    box-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff inset, 0 0 30px #00f0ff;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+/* Efeito neon animado nas bordas */
+.neon-button::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(0, 240, 255, 0.4), transparent);
+    transition: left 0.6s;
+}
+
+.neon-button:hover::before {
+    left: 100%;
+}
+
+
+/*Faixa de endereço*/
+.endereco-faixa {
+    font-family: 'Quicksand', sans-serif;
+    background-color: black;
+    border-top: 3px solid rgb(53, 81, 240);
+    border-bottom: 3px solid rgb(44, 100, 255);
+    padding: 15px 0;
+    text-align: center;
+}
+
+.endereco-faixa p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/*Pão diário*/
+
+.pao-diario {
+    margin: 50px auto;
+    padding: 40px 0;
+}
+
+.pao-imagem {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 10px; /* Deixa a imagem levemente arredondada */
+}
+
+.text-content {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-content h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(255, 253, 253);
+}
+
+.text-content p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.ver-mais {
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    background-color: gold;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.ver-mais:hover {
+    background-color: #e6b800;
+}
+
+/* Centralizar o título da seção "Produtos" */
+.produtos h2 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+/* Estilo para os quadrados dos produtos */
+.produto {
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    border: 2px solid #ADD8E6; /* Borda azul claro */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras para dar destaque */
+    background-color: #173c8d; /* Cor de fundo branca */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+/* Efeito hover nos produtos */
+.produto:hover {
+    transform: translateY(-10px) scale(1.05); /* Efeito de levitar e aumentar a escala */
+    box-shadow: 0 8px 16px rgba(247, 182, 6, 0.2); /* Sombra mais intensa para destacar o efeito */
+}
+
+/* Imagem dos produtos */
+.produto-imagem {
+    width: 100%; /* A imagem ocupa toda a largura do card */
+    height: 200px; /* Altura fixa para garantir uniformidade */
+    object-fit: contain; /* Garante que a imagem se ajusta sem cortes e sem distorções */
+    border-radius: 5px; /* Bordas arredondadas */
+    max-width: 100%; /* Garantir que não ultrapasse a largura do card */
+    margin-bottom: 10px; /* Espaço entre a imagem e o título */
+}
+
+/* Preço */
+.preco {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: #dcf30c;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Título dos produtos */
+.produto h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilo para os botões */
+.produtos .btn-adicionar {
+    font-family: 'Quicksand', sans-serif;
+    background-color: gold; /* Cor dourada */
+    border: 2px solid gold; /* Borda dourada */
+    color: black; /* Texto preto */
+    font-size: 1rem; /* Tamanho da fonte */
+    padding: 10px 20px; /* Padding confortável */
+    width: 100%; /* Ocupa toda a largura do botão */
+    cursor: pointer; /* Cursor de pointer ao passar sobre o botão */
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de hover */
+.produtos .btn-adicionar:hover {
+    background-color: #ffd700; /* Dourado mais forte ao passar o mouse */
+    color: rgb(0, 0, 0); /* Texto branco ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+/* Botão neon dourado */
+.btn-dourado {
+    background-color: #0454a0; /* Cor dourada */
+    color: #fff; /* Texto branco */
+    padding: 10px 20px;
+    border: 2px solid #67a8d3;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(83, 217, 250, 0.8), 0 0 20px rgba(46, 252, 217, 0.6);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-dourado:hover {
+    background-color: #038596; /* Cor dourada */
+    box-shadow: 0 0 20px rgba(255, 204, 0, 1), 0 0 30px rgba(255, 204, 0, 0.8);
+    transform: scale(1.05); /* Leve aumento de tamanho */
+    color: #fff; /* Texto ainda branco */
+  }
+  
+
+.btn-dourado:hover {
+    background-color: #1e3185; /* Magenta */
+    color: #fff; /* Branco */
+}
+
+/* Rodapé */
+footer {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #01101f;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.footer-links, .footer-contact, .footer-social {
+    font-family: 'Quicksand', sans-serif;
+    width: 25%;
+    min-width: 200px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-social a img {
+    width: 30px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    background: #000E1A;
+    padding: 10px 0;
+}
+
+
+body {
+    background: linear-gradient(to bottom, black, #3968e7); /* Gradiente de preto para azul-turquesa */
+    background-attachment: fixed; /* Mantém o fundo fixo */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Garante que o fundo cobre toda a página */
+    color: white;
+}
+
+/* Ajustando a seção de eventos */
+.eventos {
+    font-family: 'Quicksand', sans-serif;
+    padding: 50px 0; /* Espaçamento na seção */
+    color: white; /* Cor do texto */
+    z-index: 1; /* Garantir que o conteúdo da seção fique acima do fundo */
+}
+
+/* Ajustando a seção de eventos */
+.eventos {
+    padding: 50px 0;
+    color: white;
+}
+
+/* Estilo geral dos cards de evento */
+.evento-card {
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    opacity: 0; /* Começa invisível */
+    transform: translateY(50px) scale(0.95); /* Começa deslocado e menor */
+    animation: fadeInUp 1s ease-out forwards; /* Animação de entrada */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição ao passar o mouse */
+}
+
+/* Criando um pequeno atraso entre os cards */
+.evento-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.evento-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.evento-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Definição da animação de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Efeito de hover nos cards de evento */
+.evento-card:hover {
+    transform: translateY(-10px) scale(1.05); /* Levanta e aumenta um pouco o card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave ao passar o mouse */
+}
+
+
+/* Botões estilizados */
+.eventos .btn-primary {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #1bca33;
+    border-color: #1bca33;
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efeito dourado ao passar o mouse */
+.eventos .btn-primary:hover {
+    background-color: gold;
+    border-color: gold;
+    color: black;
+}
+
+
+/*Destaques*/
+
+.desc-completa {
+    display: none;
+  }
+  
+.destaques-section {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #031638;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.titulo-destaque {
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    text-shadow: 0 0 10px rgb(12, 93, 199), 0 0 20px #0ff;
+}
+
+.destaque-card {
+    font-family: 'Quicksand', sans-serif;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgb(0, 162, 255);
+    border-radius: 20px;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.destaque-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #0ff;
+}
+
+.destaque-img img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0ff;
+    margin-bottom: 20px;
+}
+
+.destaque-info h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: #0ff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.destaque-info p {
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+}
+
+.desc-completa {
+    font-family: 'Quicksand', sans-serif;
+    display: none;
+    margin-top: 10px;
+}
+
+button {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid rgb(0, 153, 255);
+    color: #0ff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #0ff;
+    color: #000;
+}
+
+
+/*Faixa de redes sociais*/
+/* Estilo para a faixa de redes sociais */
+.social-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #04618b, #123577); /* Gradiente suave entre laranja e vermelho */
+    padding: 10px 0;
+    border: 3px solid #4f9cff; /* Borda azul suave */
+    border-radius: 20px;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box; /* Para garantir que a borda não afete o tamanho total */
+    position: relative; /* Remover o fixed e permitir que role com a página */
+    z-index: 999; /* Garante que a faixa apareça na frente de outros elementos */
+}
+
+/* Estilo para o ícone do Instagram */
+.icon-container {
+    margin-right: 15px; /* Espaço entre o ícone e o texto */
+}
+
+.icon-container i {
+    font-size: 32px;
+    color: white;
+    transition: transform 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+.icon-container i:hover {
+    transform: scale(1.1); /* Efeito de aumento suave no ícone ao passar o mouse */
+}
+
+/* Estilo para o texto */
+.text-container p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* Faz o texto ficar em maiúsculas */
+    transition: color 0.3s ease; /* Transição suave na cor */
+}
+
+.text-container p:hover {
+    color: #f4f4f4; /* Muda a cor do texto ao passar o mouse */
+}
+
+/* Espaçamento superior para o conteúdo abaixo da faixa */
+body {
+    margin-top: 60px; /* Ajuste a margem para dar espaço abaixo da faixa */
+}
+
+
+/* Mapa de localização da igreja */
+/* Estilo do mapa */
+#map-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#church-map {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    border: 5px solid white;
+    border-radius: 10px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#church-map:hover {
+    border-color: cyan;
+}
+
+/* Estilo para a seção de evento */
+.event-section {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(45deg, #1a237e, #00acc1, #1565c0); /* Gradiente de azuis vibrantes */
+    color: white;
+    padding: 80px 0;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Imagem do evento */
+.event-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Título elegante do evento */
+.event-section h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Sombra para dar um destaque elegante */
+}
+
+/* Descrição do evento */
+.event-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-family: 'Quicksand', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #e1f5fe;
+}
+
+/* Botão Participar com estilo de efeito neon */
+.btn-custom-blue {
+    background-color: #1e88e5;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    color: white;
+    border-radius: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Efeito de neon no botão */
+.btn-custom-blue::before {
+    font-family: 'Quicksand', sans-serif;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #fff, #1e88e5, #81d4fa);
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: neonAnimation 3s ease-in-out infinite;
+}
+
+/* Animação do efeito neon */
+@keyframes neonAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Hover: muda a cor e aumenta a sombra */
+.btn-custom-blue:hover {
+    background-color: #1565c0;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-4px);
+}
+
+/* Efeito ativo: muda a cor e o botão parece pressionado */
+.btn-custom-blue:active {
+    background-color: #0d47a1;
+    transform: translateY(2px);
+}
+
+/* Mobile menu /*
+/* ===== AJUSTES PARA MOBILE ===== */
+@media (max-width: 768px) {
+    
+    /* Deixar o ícone do menu visível (hambúrguer em branco) */
+    .navbar-toggler {
+        border-color: white;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    /* Reduzir largura do botão "Fazer Login" */
+    .login-btn {
+        padding: 10px 14px;
+        font-size: 16px;
+        width: auto; /* Evita ocupar toda a largura */
+        display: inline-block;
+    }
+
+    /* Centralizar botão, se quiser também pode aplicar isso: */
+    .navbar-nav .nav-item:last-child {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/*Logo*/
+/* Ajustar o tamanho do logo na navbar */
+.logo-navbar {
+    width: 120px; /* Ajuste o tamanho do logo para desktop */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 15px; /* Espaço entre o logo e o nome da igreja */
+}
+
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+    .logo-navbar {
+        width: 80px; /* Reduz o tamanho do logo para mobile */
+    }
+}
+
+/* Ajustar o posicionamento do logo e do nome */
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Alinha o logo e o texto */
+    padding: 0; /* Remove o padding padrão para ajuste preciso */
+}
+
+
+/*Mobile slides*/
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: min(60vw, 260px); /* Altura responsiva e mais horizontal */
+    }
+
+    .slide-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .btn-slide {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .slide-content {
+        left: 20px; /* Ajuste de margem lateral */
+    }
+}
+
+/*Mobile botões perto da faixa*/
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin: 30px 0;
+    }
+
+    .neon-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+/*Mobile Pão Diário*/
+/* Ajuste para telas pequenas (mobile) */
+@media (max-width: 768px) {
+    /* Alinhamento da imagem e conteúdo para dispositivos móveis */
+    .pao-diario .row {
+        flex-direction: column; /* Empilha as colunas para uma única linha em mobile */
+        align-items: center; /* Centraliza o conteúdo */
+    }
+
+    /* Ajuste da imagem */
+    .pao-imagem {
+        max-width: 80%; /* Reduz o tamanho da imagem em telas menores */
+    }
+
+    /* Ajuste do conteúdo de texto */
+    .text-content {
+        padding: 15px;
+    }
+
+    .text-content h2 {
+        font-size: 24px; /* Ajusta o tamanho do título */
+    }
+
+    .text-content p {
+        font-size: 16px; /* Ajusta o tamanho do texto */
+    }
+
+    .ver-mais {
+        font-size: 14px; /* Ajusta o tamanho do botão */
+        padding: 8px 16px; /* Ajusta o tamanho do botão */
+    }
+}
+
+/*Faixa de Redes Sociais - Mobile*/
+/*Faixa de redes sociais*/
+/* Estilo para a faixa de redes sociais */
+.social-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #04618b, #123577); /* Gradiente suave entre laranja e vermelho */
+    padding: 10px 0;
+    border: 3px solid #4f9cff; /* Borda azul suave */
+    border-radius: 20px;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box; /* Para garantir que a borda não afete o tamanho total */
+    position: relative; /* Remover o fixed e permitir que role com a página */
+    z-index: 999; /* Garante que a faixa apareça na frente de outros elementos */
+}
+
+/* Ajuste para a versão mobile */
+@media (max-width: 768px) {
+    /* Ícone do Instagram */
+    .icon-container {
+        margin-right: 8px; /* Menor espaço entre o ícone e o texto */
+    }
+
+    .icon-container i {
+        font-size: 24px; /* Reduz o tamanho do ícone para mobile */
+    }
+
+    /* Texto da faixa */
+    .text-container p {
+        font-size: 14px; /* Reduz a fonte do texto para mobile */
+    }
+
+    /* Ajustar o padding da faixa para evitar que ocupe muito espaço */
+    .social-banner {
+        padding: 8px 0;
+    }
+}
+
+/* Estilo para o ícone do Instagram */
+.icon-container {
+    margin-right: 15px; /* Espaço entre o ícone e o texto */
+}
+
+.icon-container i {
+    font-size: 32px;
+    color: white;
+    transition: transform 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+.icon-container i:hover {
+    transform: scale(1.1); /* Efeito de aumento suave no ícone ao passar o mouse */
+}
+
+/* Estilo para o texto */
+.text-container p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* Faz o texto ficar em maiúsculas */
+    transition: color 0.3s ease; /* Transição suave na cor */
+}
+
+.text-container p:hover {
+    color: #f4f4f4; /* Muda a cor do texto ao passar o mouse */
+}
+
+/* Espaçamento superior para o conteúdo abaixo da faixa */
+body {
+    margin-top: 60px; /* Ajuste a margem para dar espaço abaixo da faixa */
+}
+
+/*Evento único - Mobile*/
+/* Estilo para a seção de evento */
+.event-section {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(45deg, #1a237e, #00acc1, #1565c0); /* Gradiente de azuis vibrantes */
+    color: white;
+    padding: 80px 0;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Imagem do evento */
+.event-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Título elegante do evento */
+.event-section h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Sombra para dar um destaque elegante */
+}
+
+/* Descrição do evento */
+.event-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-family: 'Quicksand', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #e1f5fe;
+}
+
+/* Botão Participar com estilo de efeito neon */
+.btn-custom-blue {
+    background-color: #1e88e5;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    color: white;
+    border-radius: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Efeito de neon no botão */
+.btn-custom-blue::before {
+    font-family: 'Quicksand', sans-serif;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #fff, #1e88e5, #81d4fa);
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: neonAnimation 3s ease-in-out infinite;
+}
+
+/* Animação do efeito neon */
+@keyframes neonAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Hover: muda a cor e aumenta a sombra */
+.btn-custom-blue:hover {
+    background-color: #1565c0;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-4px);
+}
+
+/* Efeito ativo: muda a cor e o botão parece pressionado */
+.btn-custom-blue:active {
+    background-color: #0d47a1;
+    transform: translateY(2px);
+}
+
+/* Mobile - Ajustes para tela pequena */
+@media (max-width: 767px) {
+    .event-section {
+        padding: 40px 0; /* Menos padding nas laterais */
+    }
+
+    .event-section img {
+        max-width: 80%; /* Reduzir o tamanho da imagem no mobile */
+        margin: 0 auto; /* Centralizar a imagem */
+        display: block; /* Garantir que a imagem esteja centralizada */
+    }
+
+    .event-section h2 {
+        font-size: 2rem; /* Tamanho menor para o título */
+    }
+
+    .event-section p {
+        font-size: 1rem; /* Font menor na descrição */
+        max-width: 100%; /* Ajustar o texto para largura total */
+    }
+
+    .btn-custom-blue {
+        font-size: 16px; /* Font menor no botão */
+        padding: 12px 30px; /* Ajuste no padding do botão */
+    }
+}
+
+/*Destaques - Mobile*/
+/* RESPONSIVO - MOBILE */
+@media (max-width: 767px) {
+    .destaques-section {
+      padding: 40px 10px;
+    }
+  
+    .titulo-destaque {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+  
+    .destaque-card {
+      padding: 15px;
+      margin: 20px auto;
+      max-width: 95%;
+    }
+  
+    .destaque-img img {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 15px;
+    }
+  
+    .destaque-info h3 {
+      font-size: 1.5rem;
+    }
+  
+    .destaque-info p,
+    .desc-completa p {
+      font-size: 0.95rem;
+    }
+  
+    button {
+      padding: 8px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  /*Transmissão Ao vivo - Mobile*/
+  /* Estilo neon */
+.text-neon {
+    font-family: 'Quicksand', sans-serif;
+    color: #0ff;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px rgb(0, 255, 255), 0 0 20px #0ff;
+  }
+
+  .live-video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 proporção */
+    height: 0;
+    overflow: hidden;
+    max-width: 800px; /* Limite de largura em telas grandes */
+    margin: 0 auto;
+  }
+  
+  .live-video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Se quiser cantos arredondados */
+    box-shadow: 0 0 15px rgba(0,255,255,0.5); /* Glow suave opcional */
+  }
+  
+  
+  /* Iframe responsivo fallback */
+  .ratio {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+  }
+  
+  .ratio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  /* Ajustes para mobile */
+  @media (max-width: 767px) {
+    .text-neon {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+  
+    .container {
+      padding: 0 10px;
+    }
+  }
+  
+  /*Produtos - Mobile*/
+  /* Container do botão */
+.botao-ver-todos {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  /* Botão menor no mobile */
+  @media (max-width: 767px) {
+    .btn-dourado {
+      font-size: 14px;
+      padding: 8px 14px;
+      width: auto; /* Não ocupar 100% */
+    }
+  
+    .produtos h2 {
+      font-size: 28px; /* Reduz um pouco o título no mobile */
+      text-align: left;
+    }
+  
+    .botao-ver-todos {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+  }
+/* Centralizar o título da seção "Produtos" */
+.produtos h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+    margin-top: 20px; /* espaçamento superior */
+    padding-left: 10px; /* distância da borda esquerda */
+}
+
+/* Ajuste extra só para telas pequenas */
+@media (max-width: 576px) {
+  .produtos h2 {
+    font-size: 28px; /* levemente menor no mobile */
+    margin-top: 30px;
+    padding-left: 16px;
+  }
+}
+
+/*Eventos - Mobile*/
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+    .eventos h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+  
+    .evento-card {
+      margin-bottom: 30px; /* espaçamento entre cards */
+      padding: 10px;
+    }
+  
+    .evento-card img {
+      border-radius: 8px;
+    }
+  
+    .evento-card .card-title {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  
+    .evento-card .card-text {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  
+    .eventos .btn-primary {
+      font-size: 0.95rem;
+      padding: 8px 16px;
+    }
+  
+    .eventos .row {
+      flex-direction: column;
+    }
+  
+    .eventos .col-md-4 {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    .evento-card {
+      text-align: center;
+    }
+  }
+
+/*Mapa de localização - Mobile*/
+#map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin-top: 20px;
+}
+
+#map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Mobile ajustes extras */
+@media (max-width: 768px) {
+    .container h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    #map-container {
+        padding-bottom: 75%; /* Aumenta a altura do mapa no celular */
+        border-radius: 8px;
+    }
+}
+
+/*Rodapé Página Principal - Mobile*/
+/* Estrutura principal do rodapé */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px 20px 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Container flexível */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cada bloco do rodapé */
+.footer-container > div {
+    flex: 1 1 200px;
+    min-width: 200px;
+}
+
+/* Logo centralizado no mobile */
+.footer-logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: gold;
+}
+
+/* Contato */
+.footer-contact p {
+    margin: 5px 0;
+}
+
+/* Ícones sociais */
+.footer-social a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2);
+}
+
+/* Rodapé inferior */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0 0;
+    font-size: 14px;
+    color: #ccc;
+    border-top: 1px solid #333;
+    margin-top: 30px;
+}
+
+/* RESPONSIVO para MOBILE */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-container > div {
+        margin-bottom: 30px;
+    }
+
+    .footer-social a img {
+        margin: 0 8px;
+    }
+
+    .footer-logo img {
+        margin-bottom: 15px;
+    }
+
+    .footer-links h3,
+    .footer-contact h3,
+    .footer-social h3 {
+        margin-bottom: 10px;
+    }
+}

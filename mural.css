@@ -1,0 +1,59 @@
+/* Estilo Geral */
+body {
+    background: linear-gradient(120deg, #0a0f2c, #081b3c, #0a0f2c);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+}
+
+/* Card das Imagens */
+.photo-card {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(97, 255, 255, 0.74);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+}
+
+.photo-card img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+/* Animação Hover */
+.photo-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
+}
+
+.photo-card img:hover {
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background: #020912;
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+    .photo-card {
+        height: 300px;
+    }
+    .photo-card img {
+        width: 300px;
+        height: 300px;
+    }
+}

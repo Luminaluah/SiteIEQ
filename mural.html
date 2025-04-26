@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural de Fotos</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- GLightbox -->
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Seu CSS personalizado -->
+    <link rel="stylesheet" href="mural.css">
+</head>
+
+<body>
+
+<header class="py-5 text-center text-light">
+    <h1 class="display-4 fw-bold">Mural de Fotos da Igreja</h1>
+    <p class="lead">Momentos inesquecíveis da nossa comunidade</p>
+</header>
+
+<section class="container py-5">
+    <div class="row g-4">
+
+        <!-- Card de foto com Lightbox -->
+        <div class="col-sm-6 col-md-4">
+            <a href="Seções/Seção do pão diário.jpeg" class="glightbox" data-gallery="mural">
+                <div class="photo-card">
+                    <img src="Seções/Seção do pão diário.jpeg" alt="Evento 1" class="img-fluid">
+                </div>
+            </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <a href="img/foto2.jpg" class="glightbox" data-gallery="mural">
+                <div class="photo-card">
+                    <img src="Pão Diário/pãodiario.png" alt="Evento 2" class="img-fluid">
+                </div>
+            </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <a href="img/foto3.jpg" class="glightbox" data-gallery="mural">
+                <div class="photo-card">
+                    <img src="img/foto3.jpg" alt="Evento 3" class="img-fluid">
+                </div>
+            </a>
+        </div>
+
+        <!-- Adicione mais fotos assim -->
+
+    </div>
+</section>
+
+<footer class="text-center py-4 text-light">
+    © 2025 Igreja Exemplo. Todos os direitos reservados.
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+    const lightbox = GLightbox({
+        selector: '.glightbox'
+    });
+</script>
+
+</body>
+</html>

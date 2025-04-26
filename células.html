@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Células</title>
+    <link rel="stylesheet" href="células.css">
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Botão Voltar com ícone e função para voltar à página anterior -->
+<button class="btn-voltar" onclick="window.history.back();">
+    <i class="fas fa-arrow-left"></i> Voltar
+</button>
+
+
+    <section class="container">
+        <div class="card">
+            <img src="Slides do Menu/boas vindas.png" alt="Célula 1">
+            <div class="content">
+                <h2>Célula 1</h2>
+                <p>Uma comunidade unida para compartilhar conhecimento e fé.</p>
+                <button class="btn" onclick="openModal('Célula 1', 'Timóteo 1', 'XX', 'Rua das Flores, 123')">Saiba Mais</button>
+                <div class="info-text"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Slides do Menu/boas vindas.png" alt="Célula 2">
+            <div class="content">
+                <h2>Célula 2</h2>
+                <p>Aprendizado e crescimento juntos em um ambiente acolhedor.</p>
+                <button class="btn" onclick="openModal('Célula 2', 'Timóteo 2', 'XX', 'Avenida Central, 456')">Saiba Mais</button>
+                <div class="info-text"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Slides do Menu/boas vindas.png" alt="Célula 3">
+            <div class="content">
+                <h2>Célula 3</h2>
+                <p>Fortalecendo laços e compartilhando experiências.</p>
+                <button class="btn" onclick="openModal('Célula 3', 'Timóteo 3', 'XX', 'Travessa da Esperança, 789')">Saiba Mais</button>
+                <div class="info-text"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Slides do Menu/boas vindas.png" alt="Célula 4">
+            <div class="content">
+                <h2>Célula 4</h2>
+                <p>Um espaço para crescimento e amizade verdadeira.</p>
+                <button class="btn" onclick="openModal('Célula 4', 'Timóteo 4', 'XX', 'Rua da União, 321')">Saiba Mais</button>
+                <div class="info-text"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Slides do Menu/boas vindas.png" alt="Célula 5">
+            <div class="content">
+                <h2>Célula 5</h2>
+                <p>Encontros especiais para inspirar e transformar vidas.</p>
+                <button class="btn" onclick="openModal('Célula 5', 'Timóteo 5', 'XX', 'Avenida dos Sonhos, 654')">Saiba Mais</button>
+                <div class="info-text"></div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p><strong>Líder:</strong> <span id="modal-leader"></span></p>
+            <p><strong>Timóteo:</strong> <span id="modal-timoteo"></span></p>
+            <p><strong>Endereço:</strong> <span id="modal-address"></span></p>
+        </div>
+    </div>
+<!--Rodapé-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="Logos/logotipo igreja.png" alt="Logo da Igreja">
+            </div>
+            
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="ministerios.html">Ministérios</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <p><strong>Endereço:</strong> Rua Exemplo, 123 - Cidade, Estado</p>
+                <p><strong>Email:</strong> contato@igreja.com</p>
+                <p><strong>Telefone:</strong> (00) 1234-5678</p>
+            </div>
+    
+            <div class="footer-social">
+                <h3>Siga-nos</h3>
+                <a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="youtube-icon.png" alt="YouTube"></a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Igreja Exemplo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+
+    <script src="células.js"></script>
+</body>
+</html>

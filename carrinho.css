@@ -1,0 +1,51 @@
+  /* Estilo geral do corpo */
+body {
+    background: linear-gradient(to bottom, black, #3968e7); /* Gradiente de preto para azul-turquesa */
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100vh;
+    color: white; /* Cor do texto no corpo */
+}
+  
+/* Estilo para o carrinho de compras */
+#produtos-carrinho .produto {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+#produtos-carrinho .produto img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#produtos-carrinho .produto h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#produtos-carrinho .produto p {
+    font-size: 16px;
+    color: #333;
+}
+
+#produtos-carrinho .produto .quantidade {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+#produtos-carrinho .produto .btn-remover {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+}
+
+#produtos-carrinho .produto .btn-remover:hover {
+    background-color: #c0392b;
+}

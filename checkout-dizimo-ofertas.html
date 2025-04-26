@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dízimos e Ofertas</title>
+  <link rel="stylesheet" href="checkout-dizimo-ofertas.css" />
+</head>
+<body>
+  <main class="container-doacoes">
+    <h1>Dízimos e Ofertas</h1>
+
+    <section class="secao">
+      <h2>Dízimo</h2>
+      <div class="conteudo-doacao">
+        <img src="qr-dizimo.png" alt="QR Code para Dízimo" class="qr-code" />
+        <div class="info-pagamento">
+          <p><strong>Chave Pix:</strong></p>
+          <input type="text" id="pix-dizimo" value="pixdizimo@igreja.com" readonly />
+          <button onclick="copiarChave('pix-dizimo')">Copiar Chave Pix</button>
+          <a href="checkout-cartao-diziofer.html" class="botao-cartao-link" onclick="pagarCartao('oferta')">Pagar com Cartão</a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <h2>Oferta</h2>
+      <div class="conteudo-doacao">
+        <img src="qr-oferta.png" alt="QR Code para Oferta" class="qr-code" />
+        <div class="info-pagamento">
+          <p><strong>Chave Pix:</strong></p>
+          <input type="text" id="pix-oferta" value="pixoferta@igreja.com" readonly />
+          <button onclick="copiarChave('pix-oferta')">Copiar Chave Pix</button>
+          <a href="checkout-cartao-diziofer.html" class="botao-cartao-link" onclick="pagarCartao('oferta')">Pagar com Cartão</a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="checkout-dizimo-ofertas.js"></script>
+</body>
+</html>

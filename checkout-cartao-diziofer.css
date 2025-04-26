@@ -1,0 +1,84 @@
+body {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .checkout-container {
+    background-color: #1a1a1a;
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 195, 255, 0.4);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .checkout-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #00c3ff;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+    color: #00c3ff;
+  }
+  
+  input {
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    background-color: #2a2a2a;
+    color: #00ffff;
+  }
+  
+  .linha-dupla {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  button {
+    background: linear-gradient(90deg, #00c3ff, #0072ff);
+    border: none;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 0 12px #00c3ff;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00c3ff;
+  }
+  
+  .voltar {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .voltar a {
+    color: #00c3ff;
+    text-decoration: none;
+  }
+  
+  .voltar a:hover {
+    text-decoration: underline;
+  }
+  
